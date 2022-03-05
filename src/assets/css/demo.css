@@ -804,3 +804,11 @@
     display: block;
     width: 100%;
 }
+
+.complete-task {
+  background-color: #d4fbf0
+}
+
+.pending-task {
+  background-color: #ffe7dd
+}

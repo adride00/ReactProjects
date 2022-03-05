@@ -23,14 +23,38 @@ import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
-
+import Reduce from "views/Reduce.js";
+import {CrudApp} from "views/CrudApp.js";
+import {RouterBasic} from "views/RouterBasic"
 const dashboardRoutes = [
+  
   {
     upgrade: true,
     path: "/upgrade",
     name: "Upgrade to PRO",
     icon: "nc-icon nc-alien-33",
     component: Upgrade,
+    layout: "/admin",
+  },
+  {
+    path: "/routerBasic",
+    name: "RouterBasic",
+    icon: "nc-icon nc-map-big",
+    component: RouterBasic,
+    layout: "/admin",
+  },
+  {
+    path: "/crudApp",
+    name: "CrudApp",
+    icon: "nc-icon nc-badge",
+    component: CrudApp,
+    layout: "/admin",
+  },
+  {
+    path: "/reduce",
+    name: "ToDO Reduce",
+    icon: "nc-icon nc-bullet-list-67",
+    component: Reduce,
     layout: "/admin",
   },
   {
