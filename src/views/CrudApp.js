@@ -19,8 +19,10 @@ export const CrudApp = () => {
   }
 
   const headerTableInfo = ["Avatar", "Name", "Last Name", "User", "Actions"]
+  
 
   const {data, status, error} = useFetch("https://621eee05849220b1fca50665.mockapi.io/api/v1/user")
+  
 
   const dataTable = [
     {

@@ -26,6 +26,7 @@ import Upgrade from "views/Upgrade.js";
 import Reduce from "views/Reduce.js";
 import {CrudApp} from "views/CrudApp.js";
 import {RouterBasic} from "views/RouterBasic"
+import {Spa} from "views/Spa"
 const dashboardRoutes = [
   
   {
@@ -34,6 +35,13 @@ const dashboardRoutes = [
     name: "Upgrade to PRO",
     icon: "nc-icon nc-alien-33",
     component: Upgrade,
+    layout: "/admin",
+  },
+  {
+    path: "/spa",
+    name: "Spa",
+    icon: "nc-icon nc-map-big",
+    component: Spa,
     layout: "/admin",
   },
   {

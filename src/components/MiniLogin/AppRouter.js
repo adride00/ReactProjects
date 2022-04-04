@@ -8,15 +8,17 @@ import {AboutScreen} from './AboutScreen'
 import {MainApp} from './MainApp'
 import {LoginScreen} from './LoginScreen'
 import {HomeScreen} from './HomeScreen'
+import {NavBarMenu} from '../../components/Elements/NavBarMenu'
 export const AppRouter = () => {
   return (
     <Router>
       <>
+        <NavBarMenu/>
         <Switch>
-          <Route path="/admin/routerBasic/about" component={AboutScreen}/>
-          <Route path="/admin/routerBasic/main" component={MainApp}/>
-          <Route path="/admin/routerBasic/login" component={LoginScreen}/>
-          <Route path="/admin/routerBasic/home" component={HomeScreen}/>
+          <Route exact path="/admin/routerBasic/about" component={AboutScreen}/>
+          <Route exact path="/admin/routerBasic/main" component={MainApp}/>
+          <Route exact path="/admin/routerBasic/login" component={LoginScreen}/>
+          <Route exact path="/admin/routerBasic/home" component={HomeScreen}/>
         </Switch>
       
       </>

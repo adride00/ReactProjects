@@ -11,7 +11,7 @@ export const PageContainer = ({todos, deleteItem, toggleItem, modal}) => {
               <Card.Header>
                 <Col md="12" className="text-left">
                 <Card.Title as="h4">Tareas</Card.Title>
-                <p className="card-category">Tareas Agregadas: {todos.length}</p>
+                <p className="card-category">Tareas Agre  gadas: {todos.length}</p>
                 </Col>
                 {modal}
               </Card.Header>
